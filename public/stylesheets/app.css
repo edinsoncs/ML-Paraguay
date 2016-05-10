@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+.bgPrincipal {
+  background: #ececec;
+}
+.bgPanel {
+  background: #dedede;
+}
+.headerPanel--ML {
+  background: #64acc6;
+  line-height: 70px;
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 1px #6dd8ff;
+}
+.headerPanel--ML .headerPanel--ML--Figure {
+  display: flex;
+  align-items: center;
+}
+.headerPanel--ML .headerPanel--ML--Figure .title {
+  margin: 0 0 0 0.5em;
+}
+.headerPanel--ML .title {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: 'Cinzel', serif;
+}
+.headerPanel--ML .De--ML .titleUser {
+  color: #fff;
+  font-size: 1.2em;
+}
+.headerPanel--ML .De--ML .titleUser i {
+  margin: 0 0.5em 0 0;
+}
+.formularioAccess {
+  position: absolute;
+  width: 450px;
+  height: auto;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  margin-left: -16em;
+  margin-top: -10em;
+}
+.formularioAccess .formularioAccess--Header {
+  text-align: center;
+}
+.formularioAccess .formularioAccess--Header .title {
+  color: #274e93;
+  font-weight: 700;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+}
+.formularioAccess .formularioAccess--Fieldset {
+  border: none;
+}
+.formularioAccess .formularioAccess--Fieldset input {
+  width: 100%;
+  padding: 0.8em 1em;
+  background: #cacaca;
+  border: none;
+  border-radius: 4px;
+  outline: medium none;
+  transition: all 0.5s linear;
+}
+.formularioAccess .formularioAccess--Fieldset input:active,
+.formularioAccess .formularioAccess--Fieldset input:hover {
+  background: #fff;
+  outline: medium none;
+  border: 1px solid #65adc6;
+  box-shadow: 0 0 0 2px #65adc6;
+  border-radius: 4px;
+}
+.formularioAccess .formularioAccess--Fieldset input[type="submit"] {
+  background: #002e5b;
+  border: none;
+  color: #fff;
+  padding: 0.8em 1em;
+}
+.formluarioSend--ML {
+  background: #fff;
+  height: 450px;
+  width: 500px;
+  margin: 1em auto;
+  text-align: center;
+}
+.formluarioSend--ML fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.formluarioSend--ML fieldset input[type='submit'] {
+  background: none;
+  padding: 1em 1.5em;
+  border: none;
+  background: #002e5b;
+  color: #fff;
+  outline: medium none;
+}
+.formluarioSend--ML .formularioSend--ML--Header {
+  padding: 1em 0;
+}
+.formluarioSend--ML .formularioSend--ML--Header .title {
+  font-weight: 400;
+  color: #757575;
+  margin: 0;
+  padding: 0;
+}
+.formluarioSend--ML .formularioSend--ML--Icon {
+  margin: 5em 0;
+  display: block;
+}
+.formluarioSend--ML .formularioSend--ML--Icon i {
+  font-size: 10em;
+  color: #dedede;
+}
+.sectionVerListado {
+  text-align: center;
+  margin: 2em 0;
+}
+.sectionVerListado .linkVer {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  background: #64acc6;
+}
+main .listadoUserUpload {
+  padding: 0 5em;
+  margin: 2em 0;
+}
+main .listadoUserUpload .link {
+  color: #fff;
+  background: #002e5b;
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  border-radius: 4px;
+}
+main .listadoFiles {
+  padding: 0 5em;
+  margin: 1em 0;
+}
+main .listadoFiles .listadoFiles--Container {
+  background: #fff;
+  width: 50%;
+  display: flex;
+  padding: 0.8em 1em;
+  justify-content: space-between;
+  border-bottom: 1px solid #dedede;
+}
+main .listadoFiles .listadoFiles--Container .container--Iz i {
+  color: #868686;
+}
+main .listadoFiles .listadoFiles--Container .container--De .nameFile {
+  color: #002e5b;
+  font-weight: 700;
+  margin: 0 0.5em 0 0;
+}
+main .listadoFiles .listadoFiles--Container .container--De .fechaFile {
+  background: transparent;
+  color: #868686;
+  padding: 0.5em;
+}
+.formNot {
+  width: 500px;
+  margin: 5em auto;
+  text-align: center;
+}
+.formNot .userNot {
+  background: #002e5b;
+  border: none;
+  padding: 0.8em 1em;
+}
+.formNot .userNot .linkVer {
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title #{title}
+
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800', rel='stylesheet', type='text/css')
+
+	link(rel="stylesheet", href="stylesheets/normalize.css")
+	link(rel="stylesheet", href="stylesheets/app.css")
+body.bgPrincipal
+	form.formularioAccess(action="/login", method="POST")
+		header.formularioAccess--Header
+			h2.title(style="color:red;")
+				|Error en acceso
+		fieldset.formularioAccess--Fieldset
+			input(type="text", name="username", placeholder="Nombre de usuario", required)
+		fieldset.formularioAccess--Fieldset
+			input(type="password", name="password", placeholder="Password", required)
+		fieldset.formularioAccess--Fieldset
+			input(type="submit", value="Ingresar")
