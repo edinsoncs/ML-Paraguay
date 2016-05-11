@@ -41,6 +41,9 @@
   height: auto;
   padding: 0.5em 1em;
 }
+.headerPanel--ML .De--ML .ul .list {
+  list-style-type: none;
+}
 .headerPanel--ML .De--ML .ul .list .link {
   color: #000;
   text-decoration: none;
