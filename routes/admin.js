@@ -38,7 +38,7 @@ router.get('/borrar/:id', function(req, res, next) {
 	var collection = db.get('files');
 
 	collection.findOne({'_id': id}, function(err, doc){
-
+		var itemDelete = doc.urlFile;
 		if(err) {
 			console.log('error ' + err);
 		}
@@ -48,14 +48,14 @@ router.get('/borrar/:id', function(req, res, next) {
 					console.log('no se removio ' + err);
 				}
 				else {
-					fs.unlink(doc.urlFile, function(err) {
+					/*fs.unlink(itemDelete, function(err) {
 						if(err) {
 							console.log('error');
 						}
 						else {
 							console.log('borrado');
 						}
-					})
+					});*/
 				}
 			}).success(function(data){
 				console.log('se removio')
