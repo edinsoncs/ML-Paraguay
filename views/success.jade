@@ -15,9 +15,19 @@ body.bgPanel
 			span.title
 				| Sistema MilleniaCapital
 		.De--ML
-			span.titleUser
+			span.titleUser.downUser
 				i(class="fa fa-user", aria-hidden="true")
-				| #{name}
+				| #{name}  
+			ul.ul.jsMenuUser
+				li.list
+					a.link(href="../../administracion")
+						| Administracion
+				li.list
+					a.link(href="../../listado")
+						| Ver Formularios
+				li.list
+					a.link(href="../../panel")
+						| Subir Archivos
 
 	main
 			
