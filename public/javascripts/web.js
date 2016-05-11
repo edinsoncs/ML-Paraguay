@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("downUser").on('click', function(){
+	$(".downUser").on('click', function(){
 		$("jsMenuUser").slideToggle();
 	});
 

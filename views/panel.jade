@@ -19,20 +19,20 @@ body.bgPanel
 					span.title
 						| Sistema MilleniaCapital
 				.De--ML
-					div.titleUser
+					span.titleUser
+						i(class="fa fa-user", aria-hidden="true")
 						strong.downUser	
-							i(class="fa fa-user", aria-hidden="true")
-							| #{name}  
-						ul.jsMenuUser
-							li.list
-								a.link(href="administracion")
-									| Administracion
-							li.list
-								a.link(href="listado")
-									| Ver Formularios
-							li.list
-								a.link(href="panel")
-									| Subir Archivos
+						| #{name}  
+					ul.ul.jsMenuUser
+						li.list
+							a.link(href="administracion")
+								| Administracion
+						li.list
+							a.link(href="listado")
+								| Ver Formularios
+						li.list
+							a.link(href="panel")
+								| Subir Archivos
 
 			form.formluarioSend--ML(action="/fileupload", method="POST", enctype="multipart/form-data")
 				header.formularioSend--ML--Header

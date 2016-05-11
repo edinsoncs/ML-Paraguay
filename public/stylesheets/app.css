@@ -31,21 +31,23 @@
   font-size: 1.5em;
   font-family: 'Cinzel', serif;
 }
-.headerPanel--ML .De--ML .titleUser {
-  color: #fff;
-  font-size: 1.2em;
+.headerPanel--ML .De--ML {
   position: relative;
 }
-.headerPanel--ML .De--ML .titleUser .ul {
+.headerPanel--ML .De--ML .ul {
   position: absolute;
   background: #fff;
   width: 224px;
   height: auto;
   padding: 0.5em 1em;
 }
-.headerPanel--ML .De--ML .titleUser .ul .list .link {
+.headerPanel--ML .De--ML .ul .list .link {
   color: #000;
   text-decoration: none;
+}
+.headerPanel--ML .De--ML .titleUser {
+  color: #fff;
+  font-size: 1.2em;
 }
 .headerPanel--ML .De--ML .titleUser i {
   margin: 0 0.5em 0 0;
