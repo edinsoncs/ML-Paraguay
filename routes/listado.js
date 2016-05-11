@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next){
-	var nameUser = req.user.username;
+	//var nameUser = req.user.username;
 	
 	var db = req.db;
 	var dataFiles = db.get('files');
@@ -19,7 +19,6 @@ router.get('/', function(req, res, next){
 
 			res.render('listado', {
 				title: 'Panel MilleniaCapital',
-				name: nameUser,
 				files: inDoc
 			});	
 		}
