@@ -42,10 +42,25 @@ router.get('/borrar/:id', function(req, res, next) {
 			console.log('error ' + err);
 		}
 		else {
+			collection.remove({'_id': id}, function(err, doc){
+				if(err) {
+					console.log('no se removio ' + err);
+				}
+				else {
+					console.log('funciono!!!');
+				}
+			}).success(function(data){
+				console.log('se removio')
+			}).error(function(err){
+				console.log('hubo un error' + err);
+			})
+
 			res.render('success', {
 				title: 'Archivo borrado',
 				dataSuccess: 'Se borro correctamente'
-			})
+			});
+
+			
 		}
 
 	});
