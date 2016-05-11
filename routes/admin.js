@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+var fs = require('fs');
 
 router.get('/', function(req, res, next) {
 	var nameUser = req.user.username;
@@ -47,7 +48,14 @@ router.get('/borrar/:id', function(req, res, next) {
 					console.log('no se removio ' + err);
 				}
 				else {
-					console.log('funciono!!!');
+					fs.unlink(doc.urlFile, function(err) {
+						if(err) {
+							console.log('error');
+						}
+						else {
+							console.log('borrado');
+						}
+					})
 				}
 			}).success(function(data){
 				console.log('se removio')
