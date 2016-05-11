@@ -88,7 +88,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 app.use('/panel', ensureAuthenticated, panel);
-app.use('/listado', ensureAuthenticated, listado);
+app.use('/listado', listado);
 
 app.use('/fileupload', fileupload);
 
