@@ -11,7 +11,7 @@ body.bgPanel
 			header.headerPanel--ML
 				
 				figure.headerPanel--ML--Figure
-					a(href="http://milleniatest.xyz/")
+					a(href="http://milleniacapital.com.py/")
 						img(src="images/logo.png", alt="")
 					span.title
 						| Sistema MilleniaCapital
@@ -19,6 +19,16 @@ body.bgPanel
 					span.titleUser
 						i(class="fa fa-user", aria-hidden="true")
 						| #{name} 
+						ul.ul
+							li.list
+								a.link(href="administracion")
+									| Administracion
+							li.list
+								a.link(href="listado")
+									| Ver Formularios
+							li.list
+								a.link(href="panel")
+									| Subir Archivos
 
 			form.formluarioSend--ML(action="/fileupload", method="POST", enctype="multipart/form-data")
 				header.formularioSend--ML--Header
@@ -31,7 +41,7 @@ body.bgPanel
 				fieldset.fieldset
 					input(type="submit" value="Subir Archivo")
 				
-			.sectionVerListado
+			//.sectionVerListado
 				a.linkVer(href="listado")
 					| Ver Formularios
 		
