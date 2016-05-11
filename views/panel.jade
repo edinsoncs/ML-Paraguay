@@ -6,6 +6,9 @@ head
 	link(rel="stylesheet", href="stylesheets/icons.css")
 	link(rel="stylesheet", href="stylesheets/normalize.css")
 	link(rel="stylesheet", href="stylesheets/app.css")
+
+	script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+
 body.bgPanel
 	if name == "milleniacapital"
 			header.headerPanel--ML
@@ -18,8 +21,9 @@ body.bgPanel
 				.De--ML
 					span.titleUser
 						i(class="fa fa-user", aria-hidden="true")
-						| #{name} 
-						ul.ul
+						strong.downUser	
+							| #{name}  
+						ul.ul.jsMenuUser
 							li.list
 								a.link(href="administracion")
 									| Administracion
@@ -45,7 +49,7 @@ body.bgPanel
 				a.linkVer(href="listado")
 					| Ver Formularios
 		
-
+		script(src='/javascripts/web.js')
 	else
 
 			script(src='/javascripts/app.js')

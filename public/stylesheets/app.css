@@ -39,7 +39,7 @@
 .headerPanel--ML .De--ML .titleUser .ul {
   position: absolute;
   background: #fff;
-  width: 350px;
+  width: 224px;
   height: auto;
   padding: 0.5em 1em;
 }
@@ -191,4 +191,7 @@ main .listadoFiles .listadoFiles--Container .container--De .fechaFile {
 .formNot .userNot .linkVer {
   color: #fff;
   text-decoration: none;
+}
+.jsMenuUser {
+  display: none;
 }

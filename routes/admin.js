@@ -57,6 +57,7 @@ router.get('/borrar/:id', function(req, res, next) {
 
 			res.render('success', {
 				title: 'Archivo borrado',
+				name: req.user.username,
 				dataSuccess: 'Se borro correctamente'
 			});
 
