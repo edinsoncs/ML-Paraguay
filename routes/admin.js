@@ -1,0 +1,56 @@
+var express = require('express');
+var router = express.Router();
+
+
+router.get('/', function(req, res, next) {
+	var nameUser = req.user.username;
+	
+	var db = req.db;
+	var dataFiles = db.get('files');
+
+
+	dataFiles.find({}, function(err, doc){
+		if(err) {
+			return err;
+		}
+		else {
+
+			var inDoc = doc.reverse();
+
+			res.render('admin', {
+				title: 'Panel MilleniaCapital',
+				name: nameUser,
+				files: inDoc
+			});	
+		}
+	});
+
+
+});
+
+router.get('/borrar/:id', function(req, res, next) {
+
+	var id = req.params.id;
+
+	var db = req.db;
+
+	var collection = db.get('files');
+
+	collection.findOne({'_id': id}, function(err, doc){
+
+		if(err) {
+			console.log('error ' + err);
+		}
+		else {
+			res.render('success', {
+				title: 'Archivo borrado',
+				dataSuccess: 'Se borro correctamente'
+			})
+		}
+
+	});
+
+
+});
+
+module.exports = router;

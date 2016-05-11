@@ -14,7 +14,7 @@ body.bgPanel
 				img(src="images/logo.png", alt="")
 			span.title
 				| Sistema MilleniaCapital
-		//.De--ML
+		.De--ML
 			span.titleUser
 				i(class="fa fa-user", aria-hidden="true")
 				| #{name}
@@ -30,8 +30,8 @@ body.bgPanel
 				each items in files
 					.listadoFiles--Container
 						.container--Iz
-								a(href="borrar/#{items._id}")
-									i(class="fa fa-times-circle", aria-hidden="true")
+								a(href="#{items.urlFile}", download="#{items.nombreFile}")
+									i(class="fa fa-cloud-download", aria-hidden="true")
 						.container--De
 							strong.nameFile
 								| #{items.nombreFile}

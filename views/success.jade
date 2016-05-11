@@ -14,27 +14,12 @@ body.bgPanel
 				img(src="images/logo.png", alt="")
 			span.title
 				| Sistema MilleniaCapital
-		//.De--ML
+		.De--ML
 			span.titleUser
 				i(class="fa fa-user", aria-hidden="true")
 				| #{name}
 
 	main
-			if name == "milleniacapital"
-				div.listadoUserUpload
-					a.link(href="panel")
-						| Subir Archivos
-			else
-				//No eres admin
+			
 			section.listadoFiles
-				each items in files
-					.listadoFiles--Container
-						.container--Iz
-								a(href="borrar/#{items._id}")
-									i(class="fa fa-times-circle", aria-hidden="true")
-						.container--De
-							strong.nameFile
-								| #{items.nombreFile}
-							span.fechaFile
-								| #{items.fechaFile}
-				
+				h2 El item se borro correctamente

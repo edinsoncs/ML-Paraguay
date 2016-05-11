@@ -28,6 +28,8 @@ var fallo = require('./routes/fallo');
 
 var fileupload = require('./routes/fileupload');
 
+var administracion = require('./routes/admin');
+
 
 var app = express();
 
@@ -88,10 +90,12 @@ app.use('/', routes);
 app.use('/users', users);
 
 app.use('/panel', ensureAuthenticated, panel);
+
 app.use('/listado', listado);
 
 app.use('/fileupload', fileupload);
 
+app.use('/administracion', administracion);
 
 
 
