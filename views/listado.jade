@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 html(lang="en")
 head
-	meta(charset="UTF-8")
-	title #{title}
-	link(rel="stylesheet", href="stylesheets/icons.css")
-	link(rel="stylesheet", href="stylesheets/normalize.css")
-	link(rel="stylesheet", href="stylesheets/app.css")
+  meta(charset="UTF-8")
+  title #{title}
+  link(rel="stylesheet", href="stylesheets/icons.css")
+  link(rel="stylesheet", href="stylesheets/normalize.css")
+  link(rel="stylesheet", href="stylesheets/app.css")
 body.bgPanel
-	header.headerPanel--ML
-		
-		figure.headerPanel--ML--Figure
-			a(href="http://milleniatest.xyz/")
-				img(src="images/logo.png", alt="")
-			span.title
-				| Sistema MilleniaCapital
-		//.De--ML
-			span.titleUser
-				i(class="fa fa-user", aria-hidden="true")
-				| #{name}
+  header.headerPanel--ML
+    
+    figure.headerPanel--ML--Figure
+      a(href="http://milleniatest.xyz/")
+        img(src="images/logo.png", alt="")
+      span.title
+        | Sistema MilleniaCapital
+    //.De--ML
+      span.titleUser
+        i(class="fa fa-user", aria-hidden="true")
+        | #{name}
 
-	main
-			if name == "milleniacapital"
-				div.listadoUserUpload
-					a.link(href="panel")
-						| Subir Archivos
-			else
-				//No eres admin
-			section.listadoFiles
-				each items in files
-					.listadoFiles--Container
-						.container--Iz
-								a(href="#{items.urlFile}", download="#{items.nombreFile}")
-									i(class="fa fa-cloud-download", aria-hidden="true")
-						.container--De
-							strong.nameFile
-								| #{items.nombreFile}
-							span.fechaFile
-								| #{items.fechaFile}
-				
+  main
+      if name == "milleniacapital"
+        div.listadoUserUpload
+          a.link(href="panel")
+            | Subir Archivos
+      else
+        //No eres admin
+      section.listadoFiles
+        each items in files
+          a.listadoFiles--Container(href="#{items.urlFile}", style="text-decoration:none;", target="_blank")
+            .container--Iz
+                i(class="fa fa-cloud-download", aria-hidden="true")
+            .container--De
+              strong.nameFile
+                | #{items.fecha}
+              //span.fechaFile
+                | #{items.fechaFile}
+        

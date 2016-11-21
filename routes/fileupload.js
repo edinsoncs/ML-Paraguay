@@ -45,7 +45,8 @@ router.post('/', multipartMiddleware, function(req, res, next) {
 					collection.insert({
 						'nombreFile': nameFile,
 						'urlFile': urlFile,
-						'fechaFile': dateFormat(now, "dddd, mmmm dS, yyyy")
+						'fechaFile': dateFormat(now, "dddd, mmmm dS, yyyy"),
+						'fecha': req.body.fecha
 					}).success(function(data){
 						res.redirect('listado');
 					}).error(function(err){
