@@ -15,7 +15,7 @@
     "express-sessions": "^1.0.5",
     "jade": "~1.11.0",
     "mongodb": "1.4.9",
-    "mongoose": "^3.8.25",
+    "mongoose": "^5.10.0",
     "monk": "^1.0.0",
     "morgan": "~1.0.0",
     "passport": "^0.3.2",
